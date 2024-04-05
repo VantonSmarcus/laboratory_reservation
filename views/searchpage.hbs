@@ -1,0 +1,38 @@
+<div class="website-container">
+    <div class="website">
+        {{>navbar}}
+        <link rel="stylesheet" href="/css/complab.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="/js/searchpage.js"></script>
+
+        <div class="search">
+            <h1>Reservation Search Bar</h1>
+            <form id="mySearch" name="mySearch">
+                <label for="rooms">Room: </label>
+                <select name="rooms" id="rooms_select">
+                    <option value="" disabled selected hidden>Select Room</option>
+                    <option value="123">Room 123</option>
+                    <option value="321">Room 321</option>
+                    <option value="934">Room 934</option>
+                </select>
+                <br>
+                <label for="dates">Dates: </label>
+
+                <!--Pending ADAPTABLE date because of the implementation of date-fns (which requires NPM installation in node js) (dont use moment, its bad daw)-->
+                <select name="dates" id="date_select" placeholder="Select Date">
+                    <option value="" disabled selected hidden>Select Date</option>
+                    {{!-- <option value ="March 1, 2024">March 1, 2024</option>
+                        <option value ="March 2, 2024">March 2, 2024</option>
+                        <option value ="March 3, 2024">March 3, 2024</option>
+                        <option value ="March 4, 2024">March 4, 2024</option>
+                        <option value ="March 5, 2024">March 5, 2024</option> --}}
+                    {{#each week}}
+                        <option value ="{{date}}">{{date}}</option>
+                    {{/each}}
+                </select>
+                <br>
+            </form>
+            <button id="submitInfo">Submit</button>
+        </div>
+    </div>
+</div>

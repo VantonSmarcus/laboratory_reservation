@@ -1,0 +1,135 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Nova Square');
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#background {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#nav_bar ul {
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+    background-color: green;
+    overflow: hidden;
+    border-radius: 5px
+}
+
+#nav_bar li {
+    float: left;
+}
+
+#logo {
+    background-image: url("dlsuLogo.png");
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: 4mm;
+    margin-top: 2mm;
+    margin-left: 3mm;
+}
+
+#nav_bar a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: greenyellow;
+    padding: 15px;
+    display: block
+}
+
+    #nav_bar a:hover {
+        background-color: #ffa500;
+        color: #141a26
+    }
+
+#search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#search-header {
+    font-size: 55px;
+}
+
+#search-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: solid;
+    border-color: lightgrey;
+    padding: 10px;
+    background-color: white;
+}
+
+#search-parameters {
+    font-size: 25px;
+    border: solid;
+    border-color: lightgrey;
+}
+
+#search-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: solid;
+    border-color: lightgrey;
+    padding: 10px;
+    background-color: white;
+}
+
+.result-item {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    border: solid;
+    border-color: lightgrey;
+    padding: 10px;
+    background-color: white;
+}
+
+.pfp {
+    display:flex;
+    width: 25%;
+    justify-content:space-around;
+    border: solid;
+    border-color: lightgrey;
+    padding: 10px;
+    background-color: white;
+}
+
+.profile-picture {
+    width: 250px;
+    height: 250px;
+}
+
+.profile-text {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    border: solid;
+    border-color: lightgrey;
+    padding: 10px;
+    background-color: white;
+}
+
+.username {
+    font-size: 100px;
+    font-style: oblique;
+}
+
+.desc {
+    font-size: 50px;
+    font-style:oblique;
+}

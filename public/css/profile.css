@@ -1,0 +1,116 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Nova Square');
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px 10px;
+}
+
+#background {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#nav_bar ul {
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+    background-color: green;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#nav_bar li {
+    float: left;
+}
+
+#logo {
+    background-image: url("/img/dlsuLogo.png");
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: 4mm;
+    margin-top: 2mm;
+    margin-left: 3mm;
+}
+
+#nav_bar a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: greenyellow;
+    padding: 15px;
+    display: block
+}
+
+#nav_bar a:hover {
+    background-color: #ffa500;
+    color: #141a26
+}
+
+#profile-complete {
+    display: flex;
+    flex-direction: row;
+    height: 65%;
+    border: solid;
+    border-color: lightgray;
+}
+
+#profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 25%;
+    border: solid;
+    border-color: lightgray;
+    background-color:white;
+    padding:30px;
+}
+
+#username{
+    font-size:55px;
+}
+
+#pfp-container {
+    width: auto; 
+    max-width: 200px; 
+    height: auto; 
+    max-height: 200px; 
+    overflow: hidden; 
+}
+
+#description{
+    font-size:20px;
+}
+
+#profile-picture {
+    width: 100%; 
+    height: 100%;
+}
+
+#reserve-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 75%;
+    border: solid;
+    border-color: lightgray;
+    background-color: white;
+}
+
+#reservations{
+    font-size:55px;
+    margin:15px;
+}
+
+.reservations>li{
+    font-size:25px;
+    margin:15px;
+}

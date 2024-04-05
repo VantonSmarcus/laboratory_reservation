@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Edit Profile</title>
+    <link rel="stylesheet" type="text/css" href="/css/edit.css" />
+</head>
+<body>
+    <div id="page-container">
+        <nav id="nav_bar">
+            <ul>
+                <li>
+                    <div id="logo"></div>
+                </li>
+                <li>
+                    <a href="/signup">Sign Up</a>
+                </li>
+                <li>
+                    <a href="/login">Log In</a>
+                </li>
+                <li>
+                    <a href="/labsearch">Labs</a>
+                </li>
+                <li>
+                    <a href="/profileSearch">Profiles</a>
+                </li>
+                <!--<li id="logout">
+                <a onclick="logOut()" href="/logout">Logout</a>
+            </li>-->
+            </ul>
+            <div id="edit-contents">
+                <h1 id="edit-header">Edit Profile</h1>
+
+                <form id="edit-form" onsubmit="submitForm(event)">
+                    <label for="new-username">New Username:</label>
+                    <input type="text" id="new-username" required>
+
+                    <label for="new-profile-picture">New Profile Picture:</label>
+                    <input type="file" accept="image/png, image/jpg, image/jpeg" id="new-profile-picture" name="newProfilePicture" required>
+
+                    <label for="new-description">New Description:</label>
+                    <input type="text" id="new-description" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+            <img id="background" src="/Computer-Lab-Background.png" />
+</div>
+    <script src="/js/script.js"></script>
+</body>
+</html>

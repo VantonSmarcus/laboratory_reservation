@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Nova Square');
+
+body::before{
+    content: "";
+    background-image: url("../img/compLabPic.webp");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+#nav_bar{
+    position: relative;
+    z-index: 100;
+}
+
+#nav_bar ul{
+    padding: 0px;
+    list-style-type: none;
+    flex-direction: column;
+    margin: 0px;
+    background-color: green;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 5px
+}
+
+#dlsuLogo{
+    background-image: url("../img/dlsuLogo.png");
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: 4mm;
+    margin-top: 2mm;
+    margin-left: 3mm;
+}
+
+#nav_bar li{
+    float: left;
+}
+
+#nav_bar a{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: greenyellow;
+    padding :15px;
+    display: block
+}
+
+#nav_bar a:hover{
+    background-color: #ffa500;
+    color: #141a26
+}
+
+#formContainer{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 33%;
+    margin-right: 25%;
+    width: fit-content;
+    height: 50%;
+    padding: 5mm;
+    border-radius: 3%;
+    border: 1px solid darkgreen;
+    background-color: #e8f4ea;
+}
+
+#errorMsg{
+    margin: auto;
+    color: red;
+}

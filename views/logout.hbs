@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            "Placeholder" Computer Lab Reservation System Login
+        </title>        
+
+        <nav id="nav_bar">
+            <ul>
+                <li>
+                    <div id="dlsuLogo"></div>
+                </li>
+                <li>
+                    <a href="/signup">Sign Up</a>
+                </li>
+                <li>
+                    <a href="/login">Log In</a>
+                </li>
+                <li>
+                    <a href="/labsearch">Labs</a>
+                </li>
+                <li id="logout">
+                    <a onclick="logOut()" href="/logout">Logout</a>
+                </li>
+            </ul>
+        </nav>
+
+        <link rel="stylesheet" href="/css/reg_log_design.css">
+        <script src="/js/logoutScript.js"></script>
+    </head>
+
+    <body>
+        <div id="formContainer">
+            <h1 style="text-align: center;">Would you like to logout?</h1>
+            <br>
+
+            <button style="margin-left: 38%;" type="button" id="submit">Logout</button>
+            <br>
+            <p id="errorMsg">{{errorMsg}}</p>
+        </div>
+    </body> 
+</html>

@@ -1,0 +1,93 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Nova Square');
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#background {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#nav_bar ul {
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+    background-color: green;
+    overflow: hidden;
+    border-radius: 5px
+}
+
+#nav_bar li {
+    float: left;
+}
+
+#logo {
+    background-image: url("dlsuLogo.png");
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: 4mm;
+    margin-top: 2mm;
+    margin-left: 3mm;
+}
+
+#nav_bar a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: greenyellow;
+    padding: 15px;
+    display: block
+}
+
+#nav_bar a:hover {
+    background-color: #ffa500;
+    color: #141a26
+}
+
+#edit-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#edit-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border:solid;
+    border-color:lightgrey;
+    padding:10px;
+    background-color:white;
+}
+
+#edit-header{
+    font-size:55px;
+}
+
+#new-username{
+    font-size:25px;
+    border:solid;
+    border-color:lightgrey;
+}
+
+#new-profile-picture {
+    font-size: 25px;
+    border: solid;
+    border-color: lightgrey;
+}
+
+#new-description {
+    font-size: 25px;
+    height:150px;
+    border: solid;
+    border-color: lightgrey;
+}

@@ -1,0 +1,131 @@
+<div class="website-container">
+    <div class="website">
+        {{>navbar}}
+        <link rel="stylesheet" href="/css/complab.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="/js/labpage.js"></script>
+
+        <div class="overlay">
+            <div class="popup" id="tablepopup">
+                <table cellpadding="0" cellspacing="0" id="our_table">
+                    <tr>
+                        <td colspan="2">7 am</td>
+                        <td colspan="2">8 am</td>
+                        <td colspan="2">9 am</td>
+                        <td colspan="2">10 am</td>
+                        <td colspan="2">11 am</td>
+                        <td colspan="2">12 pm</td>
+                        <td colspan="2">1 pm</td>
+                        <td colspan="2">2 pm</td>
+                        <td colspan="2">3 pm</td>
+                        <td colspan="2">4 pm</td>
+                        <td colspan="2">5 pm</td>
+                    </tr>
+                    <tr id="selectable">
+                        <td id="time7" class="timeselectors"></td>
+                        <td id="time730" class="timeselectors"></td>
+                        <td id="time8" class="timeselectors"></td>
+                        <td id="time830" class="timeselectors"></td>
+                        <td id="time9" class="timeselectors"></td>
+                        <td id="time930" class="timeselectors"></td>
+                        <td id="time10" class="timeselectors"></td>
+                        <td id="time1030" class="timeselectors"></td>
+                        <td id="time11" class="timeselectors"></td>
+                        <td id="time1130" class="timeselectors"></td>
+                        <td id="time12" class="timeselectors"></td>
+                        <td id="time1230" class="timeselectors"></td>
+                        <td id="time1" class="timeselectors"></td>
+                        <td id="time130" class="timeselectors"></td>
+                        <td id="time2" class="timeselectors"></td>
+                        <td id="time230" class="timeselectors"></td>
+                        <td id="time3" class="timeselectors"></td>
+                        <td id="time330" class="timeselectors"></td>
+                        <td id="time4" class="timeselectors"></td>
+                        <td id="time430" class="timeselectors"></td>
+                        <td id="time5" class="timeselectors"></td>
+                        <td id="time530" class="timeselectors"></td>
+                    </tr>
+                </table>
+
+                <h2 id="selectedTimeDisplay">Selected time is from --:-- to --:--</h2>
+                <button id="confirm_button">Confirm</button>
+                <button onclick="closeDown(true)">Cancel</button><br>
+            </div>
+        </div>
+
+        <div class="booking">
+            <!--This div contains the available seating plan-->
+            <div class="seating-plan">
+                <!--The left and right seats of the room are separated into two divs-->
+                <div class="left-side">
+                    <ul class="rowsofcomputers">
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_1" class="computer" /></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_2" class="computer" /></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_3" class="computer" /></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_4" class="computer" /></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_5" class="computer" /></li>
+                    </ul>
+                    <ul class="rowsofcomputers">
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_6" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_7" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_8" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_9" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_10" class="computer"/></li>
+                    </ul>
+                    <ul class="rowsofcomputers">
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_11" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_12" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_13" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_14" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_15" class="computer"/></li>
+                    </ul>
+                    
+                </div>
+                <div class="right-side">
+                    <ul class="rowsofcomputers">
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_16" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_17" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_18" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_19" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_20" class="computer"/></li>
+                    </ul>
+                    <ul class="rowsofcomputers">
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_21" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_22" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_23" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_24" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_25" class="computer"/></li>
+                    </ul>
+                    <ul class="rowsofcomputers">
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_26" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_27" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_28" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_29" class="computer"/></li>
+                        <li><img src="/static/img/green-icon.jpeg" id="pc_30" class="computer"/></li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <!--This div contains the details of the seat-->
+            <div class="details">
+                <h1>Details</h1>
+                <!--
+                <h3 id="room_id">Room: </h3>
+                <h3 id="date_string">Date: </h3>
+                <h3 id="reserve_name">Reservee: </h3>
+                -->
+                <h3>Room: {{roomNumber}}</h3>
+                <h3>Date: {{dateString}}</h3>
+                <h3>Reservee: {{userName}}</h3>
+                <h3 id="time_slot">Time: ----</h3>
+                <h3 id="seat_id">Seat Number: ----</h3>
+                <label for="annoncheck">Reserve Annonymously: </label>
+                <input type="checkbox" id="annoncheck">
+                <br><br>
+                
+                <button id="claim_button" enabled>Claim Slot</button>
+            </div>
+        </div>
+    </div>
+</div>

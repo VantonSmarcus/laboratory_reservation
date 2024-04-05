@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Search</title>
+    <link rel="stylesheet" type="text/css" href="/css/profileSearch.css" />
+</head>
+<body>
+    <div id="page-container">
+        <nav id="nav_bar">
+            <ul>
+                <li>
+                    <div id="logo"></div>
+                </li>
+                <li>
+                    <a href="/signup">Sign Up</a>
+                </li>
+                <li>
+                    <a href="/login">Log In</a>
+                </li>
+                <li>
+                    <a href="/labsearch">Labs</a>
+                </li>
+                <li>
+                    <a href="/profileSearch">Profiles</a>
+                </li>
+                <!--<li id="logout">
+                <a onclick="logOut()" href="/logout">Logout</a>
+            </li>-->
+            </ul>
+            <div id="search-container">
+                <div id="search-bar">
+                    <h1 id="search-header">Search Profile</h1>
+                    <form id="search-form" onsubmit="searchProfile(event)">
+                        <label for="search-parameters">Search username or profile type:</label>
+                        <input type="text" id="search-params" required>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div id="search-results">
+                    {{#if searchResults}}
+                    {{#each searchResults}}
+                    <div class="result-item">
+                        <div class="pfp">
+                            <img class="profile-picture" src="{{this.pfp_link}}" alt="Profile Picture">
+                        </div>
+                        <div class="profile-text">
+                            <a class="username" href="profile/{{this._id}}">{{this.username}}</a>
+                            <p class="desc">{{this.desc}}</p>
+                        </div>
+                    </div>
+                    {{/each}}
+                    {{else}}
+                    <p>No results found.</p>
+                    {{/if}}
+                </div>
+
+            </div>
+            <img id="background" src="Computer-Lab-Background.png" />
+</div>
+    <script src="/js/script.js"></script>
+</body>
+</html>

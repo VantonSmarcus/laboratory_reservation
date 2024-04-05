@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{profile.username}}'s Profile</title>
+    <link rel="stylesheet" type="text/css" href="/css/profile.css" />
+</head>
+<body>
+    <div id="page-container">
+        <nav id="nav_bar">
+            <ul>
+                <li>
+                    <div id="logo"></div>
+                </li>
+                <li>
+                    <a href="/signup">Sign Up</a>
+                </li>
+                <li>
+                    <a href="/login">Log In</a>
+                </li>
+                <li>
+                    <a href="/labsearch">Labs</a>
+                </li>
+                <li>
+                    <a href="/profileSearch">Profiles</a>
+                </li>
+                <li id="logout">
+                <a onclick="logOut()" href="/logout">Logout</a>
+            </li>
+            </ul>
+            <div id="profile-complete">
+                <div id="profile-container">
+                    <h1>{{profile.username}}</h1>
+                    <div id="pfp-container">
+                        <img id="profile-picture" src="{{profile.pfp_link}}" alt="Profile Picture">
+                    </div>
+                    <p id="description">{{profile.desc}}</p>
+                    <a id="edit-profile" href="/edit/{{profile._id}}">
+                        <button>edit profile</button>
+                    </a>
+                </div>
+                <div id="reserve-container">
+                    <h2 id="reservations">Reservations</h2>
+                    <ul class="reservations">
+                        {{! Add logic to display reservations if needed }}
+                    </ul>
+                </div>
+            </div>
+            <img id="background" src="/img/Computer-Lab-Background.png" />
+</div>
+    <script src="/js/script.js"></script>
+</body>
+</html>

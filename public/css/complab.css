@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Nova Square');
+
+:root{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    background-image: url('/static/img/compLabPic.webp');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.website-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.website{
+    background-color: rgb(213, 234, 213);
+    height: 750px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.navigation{
+    display: flex;
+    background-color: green;
+    overflow: hidden;
+    width: 1300px;
+    border-radius: 10px 10px 0 0;
+}
+
+.navigation li, .navigation ul{
+    list-style: none;
+    display: inline-block;
+}
+
+.navigation li{
+    margin-right: 20px;
+    margin-left: -10px
+}
+
+.navigation a{
+    text-decoration: none;
+    color: greenyellow;
+    padding: 10px;
+}
+
+#logo{
+    background-image: url("/static/img/dlsuLogo.png");
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: -15px;
+    margin-top: 4mm;
+    margin-left: 5mm;
+}
+
+.dropdown p{
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.navigation a:hover{
+    background-color:grey
+}
+
+.dropdown{
+    margin: 20px;
+}
+
+.dropdown button{
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(27, 101, 27);
+}
+
+.dropdown a{
+    display: block;
+}
+
+.booking{
+    display: flex;
+    margin-top: 100px;
+}
+
+.seating-plan{
+    margin-top: 20px;
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 15px;
+    padding-right: 50px;
+    border: solid;
+    border-radius: 10px;
+    background-color:rgb(172, 237, 205)
+}
+
+.rowsofcomputers>li{
+    display: inline-block;
+}
+
+.computer{
+    height: 45px;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 55px;
+}
+
+.details{
+    margin-top: 30px;
+    padding-left: 80px;
+    border-left: solid;
+}
+
+.overlay{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+table td {
+    width:50px;
+    height:50px;
+    text-align:center;
+    vertical-align:middle;
+    background-color:#ccc;
+    border:1px solid #fff;
+}
+
+table td.highlighted {
+    background-color:green;
+}
+
+table td.taken{
+    background-color: red;
+}
+
+table td.timeselectors{
+    font-size: 0;
+}
+
+.popup{
+    width: 1000px;
+    margin: auto;
+    /* margin-top: 130px;*/
+    margin-top: -700px;
+    background-color: rgb(172, 237, 205);
+    border-radius: 8px;
+    text-align: center;
+    padding: 100px;
+    visibility: hidden;
+}
+
+.search{
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+}

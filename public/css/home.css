@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Nova Square');
+
+#bg_img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: "Computer-Lab-Background.png";
+}
+
+#nav_bar ul{
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+    background-color: green;
+    overflow: hidden;
+    border-radius: 5px
+}
+
+#nav_bar li{
+    float: left;
+}
+
+#logo{
+    background-image: url("../img/dlsuLogo.png");
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: 4mm;
+    margin-top: 2mm;
+    margin-left: 3mm;
+}
+
+#nav_bar a{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    color: greenyellow;
+    padding :15px;
+    display: block
+}
+
+#nav_bar a:hover{
+    background-color: #ffa500;
+    color: #141a26
+}
+
+.button_reserve{
+    margin: 0;
+    top: 50%;
+    left: 36.75%;
+    border: none;
+    padding: 12px;
+    list-style-type: none;
+    background-color: green;
+    overflow: hidden;
+    border-radius: 5px;
+    font-size: 36px;
+    font-family: 'Nova Square';
+    animation:blinking 1.5s infinite;
+}
+
+.button_reserve_2{
+    margin: 0;
+    top: 50%;
+    left: 36.75%;
+    border: none;
+    padding: 12px;
+    list-style-type: none;
+    background-color: darkblue;
+    overflow: hidden;
+    border-radius: 5px;
+    font-size: 36px;
+    font-family: 'Nova Square';
+    animation:blinking 1.5s infinite;
+}
+
+.button_reserve:hover{
+    background-color: #ffa500;
+    animation:darkness 1s infinite;
+}
+
+.button_reserve_2:hover{
+    background-color: palevioletred;
+    animation:shine 1s infinite;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Nova Square';
+    color:yellowgreen;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0.75cm;
+    font-weight: bolder;
+    color: #141a26;
+}
+
+.description{
+    color:#ffa500;
+}
+
+.button_box{
+    margin-top: 0.15cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@keyframes blinking{
+    0%{   color: greenyellow;   }
+    47%{   color: yellowgreen; }
+    62%{   color: greenyellow; }
+    97%{   color: yellowgreen; }
+    100%{  color: greenyellow;   }
+    }
+
+@keyframes darkness {
+    0%{ color: silver;}
+    50%{ color: #141a26;}
+    100%{ color: silver;}
+}
+
+@keyframes shine {
+    0%{ color: silver;}
+    50%{ color: goldenrod;}
+    100%{ color: silver;}
+}
